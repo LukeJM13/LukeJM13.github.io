@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 253, 253);
+    color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#gitHub {
+    height: auto;
+    width: 55px;
+}
+
+#linkedIn {
+    height: auto;
+    width: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.nameTitle {
+    letter-spacing: 4px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+}
+
+.bodyWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 25px;
+    margin-top: 70px;
+}
+
+.bodyRight {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.middleName {
+    font-size: 80px;
+    color: rgb(74, 240, 190);
+    letter-spacing: 3px;
+}
+
+.headerButton:hover {
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.profilePic {
+    height: 350px;
+    width: auto;
+}
+
+.titleSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.photos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 33.333%);
+    margin-top: 100px;
+    width: 100%;
+    row-gap: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projectPhoto {
+    height: 300px;
+    width: auto;
+    transition: 1s ease;
+}
+    
+.projectPhoto:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.bottomWrapper {
+    width: 100%;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    letter-spacing: 6px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;    
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutPhoto {
+    height: auto;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.explainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+#geoPara {
+    line-height: 30px;
+    text-align: center;
+}
+
+#bulbPara {
+    line-height: 30px;
+    text-align: center;
+}
+
+#electricPara {
+    line-height: 30px;
+    text-align: center;
+}
