@@ -15,18 +15,18 @@ a {
 
 #gitHub {
     height: auto;
-    width: 55px;
+    width: clamp(15px, 60%, 75px);
 }
 
 #linkedIn {
     height: auto;
-    width: 40px;
+    width: clamp(15px, 45%, 55px);
 }
 
 .nameTitle {
     letter-spacing: 4px;
     font-weight: lighter;
-    font-size: 2vw;
+    font-size: clamp(20px, 1.8vw, 40px);
 }
 
 
@@ -166,28 +166,11 @@ a {
     justify-items: start;
     align-items: center;
     grid-template-columns: 6fr 1fr 1fr;
-    grid-template-rows: 15vh;
-}
-
-.headLeft {
-    display: flex;
-    align-items: center;
-    flex: 2;
-    border-style: solid;
-    height: 15vh;
-}
-
-.headRight {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    border-style: solid;
-    height: 15vh;
-    justify-content: center;
+    height: clamp(25px, 15vh, 220px);
 }
 
 .nav {
-    height: 10vh;
+    height: clamp(25px, 10vh, 180px);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
@@ -196,16 +179,19 @@ a {
 
 .navButton {
     font-weight: lighter;
-    font-size: 1.4vw;
+    font-size: clamp(13px, 1.5vw, 30px)
 }
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .container {
       grid-template-columns: 2% 96% 2%;
     }
     .bodyWrapper {
         flex-direction: column;
+    }
+    .header {
+        grid-template-columns: 4fr 1fr 1fr;
     }
   }
