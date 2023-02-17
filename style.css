@@ -29,27 +29,8 @@ a {
     font-size: clamp(20px, 1.9vw, 40px);
 }
 
-
-.bodyWrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    gap: 25px;
-    margin-top: 4vh;
-}
-
-.bodyRight {
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
 .middleName {
-    font-size: 5vw;
+    font-size: 3vw;
     color: rgb(74, 240, 190);
     letter-spacing: 3px;
 }
@@ -57,11 +38,6 @@ a {
 .headerButton:hover {
     color: rgb(80, 80, 80);
     cursor: pointer;
-}
-
-.profilePic {
-    height: 25vw;
-    width: auto;
 }
 
 .titleSection {
@@ -139,20 +115,13 @@ a {
 }
 
 
-
-
 .container {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     height: 100vh;
 }
 
-.border {
-    border-style: solid;
-}
-
 .header {
-    border-style: solid;
     display: grid;
     justify-items: start;
     align-items: center;
@@ -173,6 +142,39 @@ a {
     font-size: clamp(13px, 1.5vw, 30px)
 }
 
+.introduction {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 2vw;
+}
+
+.introRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2vh;
+    font-size: 1vw;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.introLeft {
+    display: flex;
+    justify-content: center;
+}
+
+.profilePic {
+    width: auto;
+    height: clamp(80px, 40vh, 500px);
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -183,19 +185,23 @@ a {
         flex-direction: column;
     }
     .header {
-        grid-template-columns: 4fr 1fr 1fr;
+        grid-template-columns: 5fr 1fr 1fr;
         height: 10vh;
+        margin-left: 5vw;
     }
     .nameTitle {
         font-size: clamp(24px, 2vw, 40px);
     }
     .nav {
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 3vh;
         margin-top: 3vh;
+        height: 10vh;
     }
     .navButton {
-        font-size: clamp(20px, 2vw, 30px);
+        font-size: 150%;
     }
     #gitHub {
         height: auto;
@@ -205,5 +211,23 @@ a {
     #linkedIn {
         height: auto;
         width: clamp(10px, 40%, 55px);
+    }
+    .profilePic {
+        width: 85%;
+        height: auto;
+    }
+    h2 {
+        font-weight: lighter;
+        font-size: 14px;
+    }
+    .middleName {
+        font-size: 7vw;
+    }
+    .introRight {
+        gap: 5vh;
+    }
+    .introduction {
+        gap: 4vh;
+        margin-top: 8vh;
     }
   }
