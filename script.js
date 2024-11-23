@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
     work.classList.remove("show");
   }
 
-  if (scrollPosition > 1000) {
+  if (scrollPosition > 800) {
     homeBtn.classList.add("show");
   } else {
     homeBtn.classList.remove("show");
