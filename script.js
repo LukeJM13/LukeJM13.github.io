@@ -40,3 +40,35 @@ window.addEventListener("scroll", () => {
     contact.classList.remove("show");
   }
 });
+
+// Helper function to reveal a section and scroll to it
+function revealAndScroll(sectionId) {
+  const section = document.getElementById(sectionId);
+
+  // Add the 'show' class to make the section visible
+  section.classList.add("show");
+
+  // Scroll to the section
+  section.scrollIntoView({ behavior: "smooth" });
+}
+
+// Navigation button event listeners
+document.getElementById("nav-work").addEventListener("click", () => {
+  revealAndScroll("work");
+});
+
+document.getElementById("down").addEventListener("click", () => {
+  revealAndScroll("work");
+});
+
+document.getElementById("nav-projects").addEventListener("click", () => {
+  revealAndScroll("projects");
+});
+
+document.getElementById("nav-contact").addEventListener("click", () => {
+  revealAndScroll("contact");
+});
+
+document.getElementById("home-btn").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

@@ -55,6 +55,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   text-decoration-color: #2dd4bf;
+  cursor: pointer;
 }
 
 nav a:active {
@@ -72,6 +73,7 @@ nav a:active {
 
 #down:hover {
   color: #2dd4bf;
+  cursor: pointer;
 }
 
 #work {
