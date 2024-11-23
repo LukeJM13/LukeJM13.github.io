@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -135,6 +139,12 @@ h3 {
   opacity: 0.4;
 }
 
+@media (prefers-color-scheme: dark) {
+  h3 {
+    opacity: 0.6;
+  }
+}
+
 .job-timeline {
   opacity: 0.4;
   font-style: italic;
@@ -200,6 +210,10 @@ hr {
 }
 
 #grint {
+  border-radius: 15px;
+}
+
+#facebook {
   border-radius: 15px;
 }
 
