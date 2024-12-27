@@ -88,6 +88,17 @@ nav a:active {
   text-decoration: none;
 }
 
+.page-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-section a:hover {
+  text-decoration: underline;
+  text-decoration-color: #2dd4bf;
+  cursor: pointer;
+}
+
 #down {
   font-size: 2.2rem;
   margin: 0;
