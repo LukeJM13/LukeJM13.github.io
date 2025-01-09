@@ -115,7 +115,7 @@ nav a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 4rem;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -129,7 +129,8 @@ nav a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  margin-bottom: 4rem;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
@@ -142,7 +143,7 @@ nav a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
@@ -187,51 +188,66 @@ hr {
   opacity: 0.2;
 }
 
-#contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  column-gap: 8rem;
-  row-gap: 4rem;
+#contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin-bottom: 4rem;
   align-items: center;
   justify-items: center;
 }
 
 @media (max-width: 899px) {
-  #contact-grid {
+  #contact-list {
     grid-template-columns: repeat(2, 1fr); /* Adjust for mid-sized screens */
   }
 }
 
 @media (max-width: 599px) {
-  #contact-grid {
+  #contact-list {
     grid-template-columns: repeat(1, 1fr); /* Adjust for small screens */
   }
 }
 
-#contact-grid img {
+#contact-list img {
   height: auto;
-  width: 80%;
+  width: 4rem;
 }
 
-#contact-grid img:hover {
-  opacity: 0.8;
-}
-
-#contact-grid a {
+#contact-list a {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  color: inherit;
 }
 
-#grint {
-  border-radius: 15px;
+.social-card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  overflow: hidden;
+  width: 85vw;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.social-card:hover {
+  background-color: #2dd4bf;
+  cursor: pointer;
+}
+
+.social-text {
+  text-decoration: none;
+  font-weight: 800;
+  color: "inherit";
 }
 
 #github {
   border-radius: 15px;
+  transform: scale(1.25);
 }
 
 @media (prefers-color-scheme: dark) {
