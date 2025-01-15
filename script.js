@@ -28,13 +28,13 @@ window.addEventListener("scroll", () => {
     homeBtn.classList.remove("show");
   }
 
-  if (scrollPosition > 1600) {
+  if (scrollPosition > 1800) {
     projects.classList.add("show");
   } else {
     projects.classList.remove("show");
   }
 
-  if (scrollPosition > 1800) {
+  if (scrollPosition > 3000) {
     contact.classList.add("show");
   } else {
     contact.classList.remove("show");
