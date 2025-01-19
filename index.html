@@ -1,201 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" id="top">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="home-styles.css" />
     <title>Luke Mcfarlane</title>
   </head>
   <body>
-    <div id="home-btn">
-      <a id="top">
-        <img src="./images/up-arrow-icon.png" alt="Arrow up" id="arrow-up" />
-      </a>
-    </div>
-    <div id="container">
-      <header>
-        <h1 id="name">Luke Mcfarlane</h1>
-        <h2 id="role">
-          <span class="role-extra">&lt;</span>Software Developer<span
-            class="role-extra"
-            >&gt;</span
-          >
-        </h2>
-      </header>
-      <nav>
-        <a id="nav-work">Work</a>
-        <a id="nav-projects">Projects</a>
-        <a id="nav-contact">Contact</a>
-      </nav>
-      <a id="down">⌄</a>
-    </div>
-    <section id="work">
-      <h3>Work</h3>
-      <div class="page-section">
-        <h4>Invdev <span class="job-timeline">March 2023 - Present</span></h4>
-        <img src="./images/invdev.png" id="invdev" />
-        <p>
-          I started at Invdev in March 2023 as an Apprentice Software Developer.
-          I knew the basics of HTML and CSS, as well as the bare minimum
-          Javascript knowledge. Over the course of my apprenticeship I grew as a
-          developer and built-out my list of tools and skills.
-          <br />
-          My main focus was on gaining an understanding of modern web
-          application development, becoming familiar with React and Node.js,
-          using Typescript/Javascript as my day-to-day coding language.
-          <br />
-          Along the way I spent time learning lots of other interesting skills,
-          such as GraphQL, Docker, Cypress, Jest and Drupal, as well as the
-          developer fundamentals like Git and GitHub.
-          <br />
-          I even got to work with exciting new technologies; Robotic Process
-          Automation tools like UiPath and n8n, as well as low-code solutions
-          such as Microsoft Power Platform.
-        </p>
+    <div id="home">
+      <div id="middle-box">
+        <h1>Luke Mcfarlane</h1>
+        <nav>
+          <a href="/work.html">Work</a>
+          <a href="/projects.html">Projects</a>
+          <a href="">About me</a>
+        </nav>
       </div>
-      <hr />
-      <div class="page-section">
-        <h4>
-          The Electric Car Scheme
-          <span class="job-timeline">August 2022 - November 2022</span>
-        </h4>
-        <img src="./images/ecs.png" id="ecs" />
-        <p>
-          My time at The Electric Car Scheme, despite being quite short, was
-          very helpful to my career.
-          <br />
-          For one thing it taught me that I'm probably not a natural salesperson
-          and I would find more enjoyment in a career path better suited to me
-          and my talents.
-          <br />
-          It was while working as a Business Development Executive at ECS that I
-          decided to pursue a career in software development, which is something
-          I'd always considered.
-          <br />
-          Sometimes it takes working a job that you don't enjoy to push you in
-          the right direction. I will always be thankful for everyone at ECS for
-          helping me discover my true passion and career path.
-        </p>
-      </div>
-      <hr />
-      <div class="page-section">
-        <h4>
-          Bulb Energy
-          <span class="job-timeline">November 2019 - April 2022</span>
-        </h4>
-        <img id="bulb" src="./images/bulb.jpg" />
-        <p>
-          My time working at Bulb was probably the most important period in my
-          life for career, as well as personal growth.
-          <br />
-          Joining as an Energy Specialist and being tasked with speaking to up
-          to 60 customers a day via phones, email and online chat really helped
-          me grow in confidence and responsibility.
-          <br />
-          Spending time in the Social and Community team, conversing with
-          customers via social media channels and managing the company app store
-          accounts gave me a different perspective on B2C communications .
-          <br />
-          I also gained so much from my time as acting team leader, having to be
-          responsible for a team of people and making sure to give them what
-          they needed to help them grow professionally.
-        </p>
-      </div>
-    </section>
-    <section id="projects">
-      <h3>Projects</h3>
-      <div class="page-section">
-        <h4>
-          <a href="https://checkpointapp.netlify.app/"> Checkpoint </a>
-          <span class="job-timeline">A goal tracking web application</span>
-        </h4>
-        <a href="https://checkpointapp.netlify.app/">
-          <img src="./images/checkpoint.png"
+      <div id="socials">
+        <a href="mailto:lmcfarlane97@hotmail.com"
+          ><img src="/icons/icons8-gmail.svg" alt="Gmail icon by Icons8"
         /></a>
-        <p>
-          Checkpoint is a simple web app for tracking the progress of both long
-          and short term goals. It can be easily customised by the user to allow
-          them to keep track of their life goals in a simple and intuitive way.
-        </p>
-        <div class="tech-stack">
-          <p style="font-weight: bold; opacity: 0.8">Tech stack</p>
-          <ul class="tech-stack-list">
-            <li><img class="tech-icon" src="./images/react.png" />React</li>
-            <li>
-              <img class="tech-icon" src="./images/typescript.png" />Typescript
-            </li>
-            <li>
-              <img
-                class="tech-icon"
-                id="express-icon"
-                src="./images/express.png"
-              />Express
-            </li>
-            <li><img class="tech-icon" src="./images/mongodb.png" />MongoDB</li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-      <div class="page-section">
-        <h4>
-          <a href="https://tubequest.netlify.app/">Tube Quest </a>
-          <span class="job-timeline">A London Underground guessing game</span>
-        </h4>
-        <a href="https://tubequest.netlify.app/">
-          <img src="./images/underground-icon.svg"
+        <a href="https://github.com/LukeJM13"
+          ><img src="/icons/icons8-github.svg" alt="Github icon by Icons8"
         /></a>
-        <p>
-          Tube Quest is a game inspired by others such as Wordle, where the user
-          has 5 attempts to guess a randomly selected London Underground tube
-          station each day. Each guess will help narrow down the target station.
-        </p>
-        <div class="tech-stack">
-          <p style="font-weight: bold; opacity: 0.8">Tech stack</p>
-          <ul class="tech-stack-list">
-            <li><img class="tech-icon" src="./images/html.png" />HTML</li>
-            <li><img class="tech-icon" src="./images/css.png" />CSS</li>
-            <li>
-              <img class="tech-icon" src="./images/javascript.png" />Javascript
-            </li>
-          </ul>
-        </div>
+        <a href="https://www.linkedin.com/in/ljm13/"
+          ><img src="/icons/icons8-linkedin.svg" alt="LinkedIn icon by Icons8"
+        /></a>
+        <a href="https://www.facebook.com/luke.mcfarlane.146/"
+          ><img src="/icons/icons8-facebook.svg" alt="Facebook icon by Icons8"
+        /></a>
+        <a href="https://www.instagram.com/lukemcfarlane1/"
+          ><img
+            src="/icons/icons8-instagram.svg"
+            alt="Instagram icon by Icons8"
+        /></a>
       </div>
-    </section>
-    <section id="contact">
-      <h3>Contact</h3>
-      <div id="contact-list">
-        <a onclick="copyEmailAddress('lmcfarlane97@hotmail.com')" id="outlook">
-          <div class="social-card">
-            <img src="./images/outlook.png" alt="Outlook logo" />
-            <p class="social-text">lmcfarlane97@hotmail.com</p>
-          </div>
-        </a>
-        <a href="https://github.com/LukeJM13">
-          <div class="social-card">
-            <img src="./images/github.jpg" alt="GitHub logo" id="github" />
-            <p class="social-text">github.com/LukeJM13</p>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/ljm13/">
-          <div class="social-card">
-            <img src="./images/linkedin.png" alt="LinkedIn logo" />
-            <p class="social-text">linkedin.com/in/ljm13</p>
-          </div>
-        </a>
-        <a href="https://www.facebook.com/luke.mcfarlane.146/">
-          <div class="social-card">
-            <img src="./images/facebook.png" alt="Facebook logo" />
-            <p class="social-text">facebook.com/luke.mcfarlane.146</p>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/lukemcfarlane1/">
-          <div class="social-card">
-            <img src="./images/instagram.png" alt="Instagram logo" />
-            <p class="social-text">instagram.com/lukemcfarlane1</p>
-          </div>
-        </a>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
