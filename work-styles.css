@@ -16,7 +16,7 @@ body {
 }
 
 #content {
-  padding: 16px 25vw 16px 25vw;
+  padding: 26px 25vw 16px 25vw;
   min-height: 100vh;
   background-image: linear-gradient(
     109.6deg,
@@ -29,7 +29,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 nav h1 {
@@ -42,7 +42,7 @@ h2 {
 
 nav div {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 nav a {
@@ -62,7 +62,7 @@ nav a:active {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
