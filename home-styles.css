@@ -31,6 +31,12 @@ h1 {
   );
 }
 
+@media (max-width: 500px) {
+  #home {
+    overflow: hidden;
+  }
+}
+
 #middle-box {
   display: flex;
   flex-direction: column;
