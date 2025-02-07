@@ -33,6 +33,7 @@ h1 {
 
 @media (max-width: 500px) {
   html,
+  #home,
   body {
     margin: 0;
     height: 100%;
