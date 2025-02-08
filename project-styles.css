@@ -12,18 +12,41 @@ html {
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #fff;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: white;
+  }
+
+  #content {
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(30, 198, 198, 1) 11.3%,
+      rgba(47, 127, 164, 1) 50.1%,
+      rgba(6, 92, 147, 1) 100.2%
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: black;
+  }
+
+  #content {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  }
 }
 
 #content {
   padding: 26px 25vw 16px 25vw;
   min-height: 100vh;
-  background-image: linear-gradient(
-    109.6deg,
-    rgba(30, 198, 198, 1) 11.3%,
-    rgba(47, 127, 164, 1) 50.1%,
-    rgba(6, 92, 147, 1) 100.2%
-  );
 }
 
 nav {
@@ -133,6 +156,7 @@ li {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 3rem;
   }
   nav h1 {
     margin-right: unset;

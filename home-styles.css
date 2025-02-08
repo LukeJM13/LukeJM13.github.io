@@ -6,9 +6,38 @@
   padding: 0;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: white;
+  }
+
+  #home {
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(30, 198, 198, 1) 11.3%,
+      rgba(47, 127, 164, 1) 50.1%,
+      rgba(6, 92, 147, 1) 100.2%
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: black;
+  }
+
+  #home {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  }
+}
+
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #fff;
 }
 
 h1 {
@@ -23,12 +52,6 @@ h1 {
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-image: linear-gradient(
-    109.6deg,
-    rgba(30, 198, 198, 1) 11.3%,
-    rgba(47, 127, 164, 1) 50.1%,
-    rgba(6, 92, 147, 1) 100.2%
-  );
 }
 
 #middle-box {
@@ -66,14 +89,18 @@ nav a:active {
   font-weight: 200;
 }
 
-#socials a img {
+#socials a {
+  color: inherit;
+}
+
+#socials a svg {
+  scale: 0.6;
+}
+
+#socials a svg:hover {
+  scale: 0.55;
+}
+
+#socials a svg:active {
   scale: 0.5;
-}
-
-#socials a img:hover {
-  scale: 0.45;
-}
-
-#socials a img:active {
-  scale: 0.4;
 }
